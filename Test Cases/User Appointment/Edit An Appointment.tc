@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Change the status of an appointment</description>
+   <name>Edit An Appointment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be285047-a0bd-4a7a-9588-06cca499cbbc</testCaseGuid>
+</TestCaseEntity>
