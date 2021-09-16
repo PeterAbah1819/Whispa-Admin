@@ -31,3 +31,4 @@ WebUI.verifyTextPresent('Admin Login Failed', false)
 
 WebUI.verifyTextPresent('An account with this email does not exist', false)
 
+WebUI.closeBrowser()

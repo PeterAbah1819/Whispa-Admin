@@ -29,3 +29,4 @@ WebUI.click(findTestObject('Object Repository/Page_Whispa/button_Log in'))
 
 WebUI.verifyTextPresent('Wrong email and password combination', false)
 
+WebUI.closeBrowser()

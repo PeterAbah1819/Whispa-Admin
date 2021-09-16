@@ -31,3 +31,4 @@ WebUI.verifyTextPresent('Overview', false)
 
 WebUI.verifyTextPresent('Here is what is happening on your overview page today', false)
 
+WebUI.closeBrowser()

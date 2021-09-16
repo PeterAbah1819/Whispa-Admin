@@ -32,3 +32,4 @@ WebUI.verifyTextPresent('Email sent successfully', false)
 
 WebUI.verifyTextPresent('Check Your Inbox', false)
 
+WebUI.closeBrowser()

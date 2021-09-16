@@ -47,3 +47,4 @@ WebUI.click(findTestObject('user appointments/Page_Whispa/user appointments/butt
 
 WebUI.verifyTextPresent('User appointment deleted successfully', false)
 
+WebUI.closeBrowser()

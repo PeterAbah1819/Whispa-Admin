@@ -27,30 +27,31 @@ WebUI.setEncryptedText(findTestObject('Page_Whispa/input_Email Address_password'
 
 WebUI.click(findTestObject('Object Repository/Page_Whispa/button_Log in'))
 
-WebUI.click(findTestObject('user appointments/span_User Appointment'))
+WebUI.click(findTestObject('Facility/Confirm Texts/span_Facility'))
 
-WebUI.verifyTextPresent('User Appointment', false)
+WebUI.verifyTextPresent('Facility Management', false)
 
-WebUI.verifyTextPresent('View all new and done appointments from users', false)
+WebUI.verifyTextPresent('View and Manage all facilities', false)
 
-WebUI.click(findTestObject('user appointments/Filter and Search/div_Schedule_appointment-header-left-single2'))
+WebUI.verifyTextPresent('USSD', false)
 
-WebUI.click(findTestObject('user appointments/Filter and Search/div_Schedule_appointment-header-left-single'))
+WebUI.verifyTextPresent('John Hopkins', false)
 
-WebUI.sendKeys(findTestObject('user appointments/Filter and Search/input_Schedule_search-div'), Keys.chord(Keys.ENTER, 'john doe'))
+WebUI.verifyTextPresent('Divine Grace', false)
 
-WebUI.refresh()
+WebUI.verifyTextPresent('Bauchi', false)
 
-WebUI.click(findTestObject('user appointments/Filter and Search/div_Filter'))
+WebUI.verifyTextPresent('Lagos', false)
 
-WebUI.setText(findTestObject('user appointments/Filter and Search/Date input 1'), '10, Sep 2021')
+WebUI.verifyTextPresent('Abia', false)
 
-WebUI.setText(findTestObject('user appointments/Filter and Search/input__react-datepicker-ignore-onclickoutside'), '17, Sep 2021', 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyTextPresent('Available', false)
 
-WebUI.click(findTestObject('user appointments/Filter and Search/span_Declined'))
+WebUI.verifyTextPresent('Suspended', false)
 
-WebUI.click(findTestObject('user appointments/Filter and Search/button_Apply Filter'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.closeBrowser()
+
+
+
+
 

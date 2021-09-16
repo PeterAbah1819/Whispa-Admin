@@ -27,30 +27,25 @@ WebUI.setEncryptedText(findTestObject('Page_Whispa/input_Email Address_password'
 
 WebUI.click(findTestObject('Object Repository/Page_Whispa/button_Log in'))
 
-WebUI.click(findTestObject('user appointments/span_User Appointment'))
+WebUI.click(findTestObject('Facility/Confirm Texts/span_Facility'))
 
-WebUI.verifyTextPresent('User Appointment', false)
+WebUI.setText(findTestObject('Facility/Search and Filter/input_Add Facility_search-div'), 'John')
 
-WebUI.verifyTextPresent('View all new and done appointments from users', false)
+WebUI.sendKeys(findTestObject('Facility/Search and Filter/input_Add Facility_search-div'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('user appointments/Filter and Search/div_Schedule_appointment-header-left-single2'))
+WebUI.click(findTestObject('Facility/Search and Filter/div_Filter'))
 
-WebUI.click(findTestObject('user appointments/Filter and Search/div_Schedule_appointment-header-left-single'))
+WebUI.click(findTestObject('Facility/Search and Filter/Top Div'))
 
-WebUI.sendKeys(findTestObject('user appointments/Filter and Search/input_Schedule_search-div'), Keys.chord(Keys.ENTER, 'john doe'))
+WebUI.click(findTestObject('Facility/Search and Filter/div_STDs'))
 
-WebUI.refresh()
+WebUI.click(findTestObject('Facility/Search and Filter/Lower Div'))
 
-WebUI.click(findTestObject('user appointments/Filter and Search/div_Filter'))
+WebUI.click(findTestObject('Facility/Search and Filter/div_Bauchi'))
 
-WebUI.setText(findTestObject('user appointments/Filter and Search/Date input 1'), '10, Sep 2021')
+WebUI.click(findTestObject('Facility/Search and Filter/Selection tag'))
 
-WebUI.setText(findTestObject('user appointments/Filter and Search/input__react-datepicker-ignore-onclickoutside'), '17, Sep 2021', 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('user appointments/Filter and Search/span_Declined'))
-
-WebUI.click(findTestObject('user appointments/Filter and Search/button_Apply Filter'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Facility/Search and Filter/button_Apply Search'))
 
 WebUI.closeBrowser()
 

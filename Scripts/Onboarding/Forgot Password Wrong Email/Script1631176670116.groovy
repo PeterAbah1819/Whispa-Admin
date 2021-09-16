@@ -34,3 +34,4 @@ WebUI.verifyTextPresent('Action Failed', false)
 
 WebUI.verifyTextPresent('An account with this email does not exist', false)
 
+WebUI.closeBrowser()

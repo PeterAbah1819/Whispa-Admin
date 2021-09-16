@@ -43,5 +43,6 @@ WebUI.verifyTextPresent('Time', false)
 
 WebUI.verifyTextPresent('Date', false)
 
+WebUI.closeBrowser()
 
 

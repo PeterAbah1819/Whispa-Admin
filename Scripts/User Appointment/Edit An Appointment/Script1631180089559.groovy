@@ -47,3 +47,4 @@ WebUI.click(findTestObject('user appointments/Page_Whispa/button_Decline'))
 
 WebUI.verifyTextPresent('Appointment declined successfully', false)
 
+WebUI.closeBrowser()
